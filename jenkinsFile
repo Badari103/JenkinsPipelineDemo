@@ -1,24 +1,21 @@
 pipeline {
     agent any
-
+    
     stages {
         stage('Checkout') {
             steps {
-                // Checkout code from the Git repository
-                git 'https://github.com/Badari103/JenkinsPipelineDemo.git'
+                git url: 'https://github.com/Badari103/JenkinsPipelineDemo.git', branch: 'main'
             }
         }
-
+        
         stage('Build') {
             steps {
-                // Build the project using Maven
                 sh 'mvn clean package'
             }
         }
-
+        
         stage('Test') {
             steps {
-                // Run the tests using Maven
                 sh 'mvn test'
             }
         }
