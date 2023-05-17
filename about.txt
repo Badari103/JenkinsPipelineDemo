@@ -1,1 +1,0 @@
-This maven project consists of unit tests and source code
