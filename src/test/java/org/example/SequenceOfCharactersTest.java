@@ -13,7 +13,7 @@ class SequenceOfCharactersTest {
 
         SequenceOfCharacters string = new SequenceOfCharacters(actual);
 
-        assertEquals(10, string.length());
+        assertEquals(12, string.length());
     }
 
     @Test
