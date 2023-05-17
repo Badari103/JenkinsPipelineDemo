@@ -42,4 +42,12 @@ class SequenceOfCharactersTest {
 
         assertEquals(12, string.length());
     }
+    @Test
+    void shouldReturnThirteenAsLengthOfTheStringWhenThoughtWorksWithSpecialCharactersIsPassedAsString() {
+        String actual = "ThoughtWorks@#%";
+
+        SequenceOfCharacters string = new SequenceOfCharacters(actual);
+
+        assertEquals(12, string.length());
+    }
 }
