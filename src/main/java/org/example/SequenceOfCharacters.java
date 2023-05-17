@@ -8,12 +8,12 @@ class SequenceOfCharacters {
     }
 
     public int length() {
-        int len = 0;
+        int length = 0;
         for (char letter : value.toCharArray()) {
             if (Character.isAlphabetic(letter)) {
-                len += 1;
+                length += 1;
             }
         }
-        return len;
+        return length;
     }
 }
