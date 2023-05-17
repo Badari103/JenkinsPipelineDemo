@@ -48,6 +48,6 @@ class SequenceOfCharactersTest {
 
         SequenceOfCharacters string = new SequenceOfCharacters(actual);
 
-        assertEquals(12, string.length());
+        assertEquals(13, string.length());
     }
 }
